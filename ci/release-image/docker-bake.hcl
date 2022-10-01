@@ -15,8 +15,8 @@ target "code-server" {
     tags = [
         # "docker.io/codercom/code-server:latest",
         # notequal("latest",VERSION) ? "docker.io/codercom/code-server:${VERSION}" : "",
-        "ghcr.io/coder/code-server:latest",
-        notequal("latest",VERSION) ? "ghcr.io/coder/code-server:${VERSION}" : "",
+        "ghcr.io/andrewwdye/code-server:latest",
+        notequal("latest",VERSION) ? "ghcr.io/andrewwdye/code-server:${VERSION}" : "",
     ]
     platforms = ["linux/amd64", "linux/arm64"]
 }
