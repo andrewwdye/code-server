@@ -64,4 +64,4 @@ RUN mkdir -p /home/coder/flyte
 WORKDIR /home/coder/flyte
 RUN git clone https://github.com/flyteorg/flytesnacks
 
-ENTRYPOINT ["/usr/bin/entrypoint.sh", "--bind-addr", "0.0.0.0:8080", "--auth", "none"]
+ENTRYPOINT ["/usr/bin/entrypoint.sh", "--bind-addr", "0.0.0.0:8080", "."]
